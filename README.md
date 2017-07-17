@@ -10,7 +10,7 @@ Comments "##start" and "##end" are provided to show the start and end room infor
 
 You can compile the program this way:
 
-<img width="405" alt="screen shot 2017-07-16 at 11 08 44 pm" src="https://user-images.githubusercontent.com/25576444/28256944-cac3247e-6a7b-11e7-94a0-d9978ab376a3.png">
+<img width="230" alt="screen shot 2017-07-16 at 11 10 44 pm" src="https://user-images.githubusercontent.com/25576444/28256980-19ebd910-6a7c-11e7-9d7a-d1abb891b823.png">
 
 There are a lot of possible ways and algorithms to solve the task. One of them is Edge Table.
 As soon as we got required information and validated it, we put all of the room names in array of strings, where index 0 is always start point and index (quantity_of_rooms - 1) - always the finish.
