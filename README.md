@@ -23,7 +23,7 @@ Now the solving part begings. To save the path we create an array of numbers wit
 
 <img width="122" alt="screen shot 2017-07-16 at 10 55 47 pm" src="https://user-images.githubusercontent.com/25576444/28256736-f710ff44-6a79-11e7-821a-0bbc58196e7d.png">
 
-The final step is to take every singe ant and lead it through the created path all the way to the end, corsidering that all of the ants are in a start room at the beginning.
+The final step is to take every singe ant and lead it through the created path all the way to the end, corsidering that all of the ants are in a start room at the beginning. The result has to written in format Ln-r, where n - the number of ant, r - room name.
 
 <img width="138" alt="screen shot 2017-07-16 at 11 03 59 pm" src="https://user-images.githubusercontent.com/25576444/28256885-36e1a3fc-6a7b-11e7-8a92-ef6f8a20740d.png">
 
