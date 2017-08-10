@@ -6,6 +6,17 @@
 /*   By: ashulha <ashulha@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/29 21:42:11 by ashulha           #+#    #+#             */
+/*   Updated: 2017/08/09 17:46:24 by ashulha          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   lem_in.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ashulha <ashulha@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/06/29 21:42:11 by ashulha           #+#    #+#             */
 /*   Updated: 2017/07/02 02:13:31 by ashulha          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
@@ -19,20 +30,20 @@
 
 typedef struct	s_map
 {
-	char		**rooms;
-	char		*rooms_list;
-	char		*ants_str;
-	char		*links;
-	int			q_rooms;
-	int			ants;
-	int			started;
-	int			curr_room;
-	int			p_ind;
-	int			*path;
-	int			**tab;
-	int			good[2];
-	int			new_line;
-	int			init_2;
+	char		**rooms;		// array of room names
+	char		*rooms_list;	// list of rooms that was passed at the beginning
+	char		*ants_str;		// list of ants that was passed at the beginning
+	char		*links;			// list of links that was passed at the beginning
+	int			q_rooms;		// quantity of rooms
+	int			ants;			// quantity of ants
+	int			started;		// a part of validation
+	int			curr_room;		// an index of current room we're in
+	int			p_ind;			// last path index, current size of path
+	int			*path;			// path
+	int			**tab;			// edge table
+	int			good[2];		// a part of validation
+	int			new_line;		// a part of validation
+	int			init_2;			// a part of validation
 }				t_map;
 
 void			count_ants(t_map *m, char *line);
