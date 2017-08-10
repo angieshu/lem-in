@@ -48,24 +48,24 @@ First of all, I create a structure, that contains all the information about give
 
 In main() function I initialize a structure, read input, split and add a given input into a structure, solve, print the output and properly exit a program.
 
-<img width="500" src="https://github.com/angieshu/lem-in/blob/master/img/main.png">
+<img width="300" src="https://github.com/angieshu/lem-in/blob/master/img/main.png">
 
 The way I create an Edge Table was described above. Basically, after initialization of the table, where each index corresponds to the room name, I have to fill it up with 1's and 0's if there is a connection between rooms and if there is not. 
 
-<img width="500" src="https://github.com/angieshu/lem-in/blob/master/img/create_tab.png">
+<img width="300" src="https://github.com/angieshu/lem-in/blob/master/img/create_tab.png">
 
 Once table is created, I can begin solving a task
 Before go further, I always check if there is a connection between start and end rooms. If it is, I add start room to my path and just print a result. Otherwise, I do next.
 Idially, each room has doors that lead to other rooms. I take a look into every door and check if any of them lead to the room, that has a connection with final room. If it does, I think you know what will be next. While ckeching for an exit, I'm also ckecking if I've been to one of the rooms before.
 If none of the rooms has a connection with the end, I go to the very first room that is connected to the current room. If there are no rooms, using backtracking algorithm, I go back to the previous room.
 
-<img width="500" src="https://github.com/angieshu/lem-in/blob/master/img/solution.png">
+<img width="300" src="https://github.com/angieshu/lem-in/blob/master/img/solution.png">
 
 If the task solved I print the results. If it's not - display an error massage.
 
 Also, I have an exit function, that frees all the allocated memory, which prevents my program from memory leaks.
 
-<img width="500" src="https://github.com/angieshu/lem-in/blob/master/img/exit.png">
+<img width="300" src="https://github.com/angieshu/lem-in/blob/master/img/exit.png">
 
 ## Author
 
